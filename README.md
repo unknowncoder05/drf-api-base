@@ -10,7 +10,7 @@ docker-compose up
 ```bash
 docker-compose down
 docker volume ls
-docker volume rm hrm_local_postgres_data
+docker volume rm <api_local_postgres_data>
 docker-compose up
 ```
 

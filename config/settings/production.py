@@ -61,13 +61,15 @@ TEMPLATES[0]['OPTIONS']['loaders'] = [  # noqa F405
     ),
 ]
 
+app_name = 'APP'
+
 # Email
 DEFAULT_FROM_EMAIL = env(
     'DJANGO_DEFAULT_FROM_EMAIL',
-    default='HRM <noreply@hrm.com>'
+    default=f'{app_name} <noreply@{app_name.lower()}.com>'
 )
 SERVER_EMAIL = env('DJANGO_SERVER_EMAIL', default=DEFAULT_FROM_EMAIL)
-EMAIL_SUBJECT_PREFIX = env('DJANGO_EMAIL_SUBJECT_PREFIX', default='[HRM]')
+EMAIL_SUBJECT_PREFIX = env('DJANGO_EMAIL_SUBJECT_PREFIX', default=f'[{app_name}]')
 
 # Admin
 ADMIN_URL = env('DJANGO_ADMIN_URL')
