@@ -8,6 +8,7 @@ docker-compose up
 ```
 
 ### Rebuild Django Migrations
+
 ```bash
 docker-compose down
 docker volume ls
