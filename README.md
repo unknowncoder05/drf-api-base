@@ -1,4 +1,5 @@
 ### Building and running
+
 ```bash
 export COMPOSE_FILE=local.yml
 
