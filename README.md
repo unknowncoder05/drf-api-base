@@ -17,6 +17,7 @@ docker-compose up
 ```
 
 ### Run individual django console
+
 ```bash
 docker-compose ps
 docker rm -f back_django_1
